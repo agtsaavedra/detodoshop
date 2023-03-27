@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1f1f1f;
+  color: white;
+  padding: 30px;
+}
+
+button {
+  color: white;
+  background-color: #1f1f1f;
+  size: 10vw;
+}
+
+.itemsList {
+  display: grid;
+  text-align: center;
+  margin: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 9%;
+}
+
+.title {
+  font-style: bold;
+  font-size: x-large;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: gray;
+}
+
+/*# sourceMappingURL=style.css.map */

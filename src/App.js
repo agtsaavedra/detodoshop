@@ -1,13 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/style.css'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-        Probando
-      </header>
+    
     </div>
   );
 }

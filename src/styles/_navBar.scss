@@ -1,13 +1,24 @@
-.navbar {
+nav li {
+    display: inline;
+}
+
+nav ul {
     display: flex;
-    justify-content:space-around;
-    background-color:  #1f1f1f;  
+    justify-content: space-around;
+}
+
+.navbar {
+    background-color: #1f1f1f;
     color: #ffff;
     padding: 30px;
 }
 
-button {
-    color: #ffff;
-    background-color: #1f1f1f;
-    size: 10vw;
+.title-nav {
+    font-size: x-large;
+}
+
+
+
+.icon-nav:hover {
+    color: #530000;
 }

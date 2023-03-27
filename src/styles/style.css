@@ -1,29 +1,42 @@
-.navbar {
+nav li {
+  display: inline;
+}
+
+nav ul {
   display: flex;
   justify-content: space-around;
+}
+
+.navbar {
   background-color: #1f1f1f;
   color: white;
   padding: 30px;
 }
 
-button {
-  color: white;
-  background-color: #1f1f1f;
-  size: 10vw;
+.title-nav {
+  font-size: x-large;
+}
+
+.icon-nav:hover {
+  color: #530000;
 }
 
 .itemsList {
-  display: grid;
-  text-align: center;
+  align-items: center;
   margin: 10px;
+  padding: 10px;
   border-width: 2px;
   border-style: solid;
-  border-radius: 9%;
+  border-radius: 1%;
 }
 
 .title {
   font-style: bold;
   font-size: x-large;
+}
+
+.list-it {
+  list-style: none;
 }
 
 * {

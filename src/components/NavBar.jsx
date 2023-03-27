@@ -4,9 +4,15 @@ export default function NavBar() {
   return (
 
 
-    <div className='navbar'> 
-        <div>Drinks MDQ</div>
-        <div><Cart/></div>
-    </div>
+    <nav className='navbar'>
+      <ul className='title-nav'>
+        <li>
+          Drinks MDQ
+        </li>
+        <li>
+          <Cart className="icon-nav"/>
+        </li>
+      </ul>
+    </nav>
   )
 }

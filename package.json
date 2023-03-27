@@ -2,6 +2,7 @@
   "name": "e-commerce-reactjs",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://agustinsaavedra9.github.io/e-commerce-reactjs",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",

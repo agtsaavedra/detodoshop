@@ -1,20 +1,14 @@
 import React from 'react'
 
+import { data } from '../data';
+
 export default function ItemsListContainer(props) {
-  return (
-    <div className='itemsList'>
-       <div className='title'>{props.greeting}</div> 
-        <ul className='list-it'>
-            <li>
-                Cerveza
-            </li>
-            <li>
-                Coca Cola
-            </li>
-            <li>
-                Vodka
-            </li>
-        </ul>
-    </div>
-  )
+    return (
+        <div className='itemsList'>
+
+     
+
+
+        </div>
+    )
 }

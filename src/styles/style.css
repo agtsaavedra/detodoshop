@@ -21,6 +21,28 @@ nav ul {
   color: #530000;
 }
 
+.buttons {
+  background-color: #1f1f1f;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+.buttons:hover {
+  background-color: #1b1b1b;
+  color: white;
+}
+
+.buttons {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
 .itemsList {
   align-items: center;
   margin: 10px;

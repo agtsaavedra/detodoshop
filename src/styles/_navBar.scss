@@ -1,23 +1,25 @@
 nav li {
     display: inline;
+    
 }
 
 nav ul {
     display: flex;
     justify-content: space-around;
+    
 }
 
 .navbar {
     background-color: #1f1f1f;
     color: #ffff;
     padding: 30px;
+    
 }
 
 .title-nav {
     font-size: x-large;
+    
 }
-
-
 
 .icon-nav:hover {
     color: #530000;
@@ -25,15 +27,15 @@ nav ul {
 
 .buttons {
     background-color: #1f1f1f;
-   
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    border-radius: 15px;
+    font-size: 20px;
+    border-radius: 15px;    
+    
 
 }
 
@@ -48,3 +50,4 @@ nav ul {
     transition-duration: 0.4s;
 
 }
+

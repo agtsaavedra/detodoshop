@@ -9,14 +9,17 @@
     border-style: solid;
     border-radius: 1%;
     gap: 1rem;
-    
-   
-   
+
+
+
 }
-.card-box{
+
+.card-box {
     display: flex;
     background-color: black;
-    justify-content: space-around;}
+    justify-content: space-around;
+}
+
 .title {
     font-style: bold;
     font-size: x-large;
@@ -35,7 +38,13 @@
     flex: 1 0 21%;
 }
 
-.title-itemlist{
-display: flex;
-justify-content: center;
+.title-itemlist {
+    display: flex;
+    justify-content: center;
+}
+
+.image-card {
+    height: 60%;
+    width: 100%;
+    
 }

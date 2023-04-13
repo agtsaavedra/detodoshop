@@ -84,6 +84,11 @@ nav ul {
   justify-content: center;
 }
 
+.image-card {
+  height: 60%;
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;

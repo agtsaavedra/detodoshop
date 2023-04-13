@@ -9,8 +9,8 @@ export default function NavBar(props) {
 
     <nav className='navbar'>
       <ul className='title-nav'>
-        <li  className='link-nav' >
-        <Link to={"/"}>DeTodo SHOP</Link> 
+        <li>
+        <Link  style={{ textDecoration: 'none' , color: 'inherit'}}  to={"/"}>DeTodo SHOP</Link> 
         </li>
         {props.products.map((element) => {
           return (<Link className='buttons'

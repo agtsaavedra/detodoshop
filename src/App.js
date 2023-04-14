@@ -1,4 +1,5 @@
 import ItemsListContainer from './components/ItemsListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
 import './styles/style.css'
@@ -19,6 +20,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home products={products}/>}></Route>
       <Route path='/:category' element={<ItemsListContainer products={products}/>}></Route>
+      <Route path='/:category/:id' element={<ItemDetailContainer products={products}/>}></Route>
     </Routes>
     </BrowserRouter>
     

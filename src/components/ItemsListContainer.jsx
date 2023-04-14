@@ -4,6 +4,8 @@ import { Card, Typography, CardMedia, Button, CardActions, Icon } from '@mui/mat
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemDetailContainer from './ItemDetailContainer';
+import { Link } from 'react-router-dom';
+
 export default function ItemsListContainer(props) {
     const [cardDescription, setCardDescription] = useState(false);
     const [itemDetails, setItemDetails] = useState(false);
@@ -18,7 +20,11 @@ export default function ItemsListContainer(props) {
             });
         }
     }, [param]);
-    console.log(idCategory)
+
+    const handleClick = () => {
+        setCardDescription(true);
+        console.log(cardDescription)
+    }
     return (
         <>
             <h1 className='title-itemlist'>Productos</h1>
@@ -39,13 +45,15 @@ export default function ItemsListContainer(props) {
                                             <Typography variant="body2" color="h3">
                                                 ${items.price}
                                             </Typography>
-                                            
-                                            <ItemDetailContainer description={items.description}></ItemDetailContainer>
-                                                
-                                           
-                                            <CardActions>
-                                                <Button className='button-card' size="big">Comprar</Button>
-                                                <Button className='button-card' size="small">Ver mas</Button>
+
+
+
+
+                                            <CardActions className='buttons-card-container'>
+                                                <button className='buttons'>Comprar</button>
+                                                {console.log (element.items.idProduct)}
+                                                <Link className='buttons'
+                                                    to={"/" + element.category + "/" }>Ver Mas</Link>
                                             </CardActions>
                                         </Card>
                                     ))}

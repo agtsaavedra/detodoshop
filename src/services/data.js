@@ -16,7 +16,7 @@ export const data = [
                 nameProduct: "Notebook DELL",
                 price: 150000,
                 quantity: 1,
-                img: "images/dell.jpg",
+                img: "e-commerce-reactjs/images/dell.jpg",
                 description:"16 GB de Ram, Intel I5"
             },
             {
@@ -24,7 +24,7 @@ export const data = [
                 nameProduct: "MotoWatch",
                 price: 20000,
                 quantity: 1,
-                img: "images/moto.jpg",
+                img: "e-commerce-reactjs/images/moto.jpg",
                 description:"3 GB de Ram, Procesador Snapdragon"
             },
             {
@@ -32,7 +32,7 @@ export const data = [
                 nameProduct: "Mouse Logitech",
                 price: 8000,
                 quantity: 1,
-                img: "images/logitech.jpg",
+                img: "e-commerce-reactjs/images/logitech.jpg",
                 description:"1800 DPI Max."
             }
         ]
@@ -47,7 +47,7 @@ export const data = [
                 nameProduct: "Zapatillas Nike",
                 price: 20000,
                 quantity: 1,
-                img: "images/nike.jpg",
+                img: "e-commerce-reactjs/images/nike.jpg",
                 description:"TALLES 35-48 --- Running"
             },
             {
@@ -55,7 +55,7 @@ export const data = [
                 nameProduct: "Campera Adidas",
                 price: 35000,
                 quantity: 1,
-                img: "images/adidas.jpg",
+                img: "e-commerce-reactjs/images/adidas.jpg",
                 description:"Maxima Calidad - TALLES S-XXL"
             },
             {
@@ -63,7 +63,7 @@ export const data = [
                 nameProduct: "Cinturon Gucci",
                 price: 200000,
                 quantity: 1,
-                img: "images/gucci.jpg",
+                img: "e-commerce-reactjs/images/gucci.jpg",
                 description:"100% CUERO"
             },
             {
@@ -71,7 +71,7 @@ export const data = [
                 nameProduct: "Remera Balenciaga",
                 price: 80000,
                 quantity: 1,
-                img: "images/balenciaga.jpg",
+                img: "e-commerce-reactjs/images/balenciaga.jpg",
                 description:"100% Algodon - TALLES S-XXL"
             }
         ]
@@ -86,7 +86,7 @@ export const data = [
                 nameProduct: "Las mil y una noches",
                 price: 2000,
                 quantity: 1,
-                img: "images/lasmil.jpg",
+                img: "e-commerce-reactjs/images/lasmil.jpg",
                 description:"16 GB de Ram, 4000mah y Exynos 8800"
             },
             {
@@ -94,7 +94,7 @@ export const data = [
                 nameProduct: "Don Quijote",
                 price: 2800,
                 quantity: 1,
-                img: "images/quijote.jpg",
+                img: "e-commerce-reactjs/images/quijote.jpg",
                 description:"16 GB de Ram, 4000mah y Exynos 8800"
             },
             {
@@ -102,7 +102,7 @@ export const data = [
                 nameProduct: "Orgullo y prejuicio",
                 price: 3500,
                 quantity: 1,
-                img: "images/orgullo.jpg",
+                img: "e-commerce-reactjs/images/orgullo.jpg",
                 description:"16 GB de Ram, 4000mah y Exynos 8800"
             },
             {
@@ -110,7 +110,7 @@ export const data = [
                 nameProduct: "Los tres mosqueteros",
                 price: 5000,
                 quantity: 1,
-                img: "images/mosque.jpg",
+                img: "e-commerce-reactjs/images/mosque.jpg",
                 description:"16 GB de Ram, 4000mah y Exynos 8800"
             }
         ]

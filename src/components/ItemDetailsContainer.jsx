@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 export default function ItemDetailsContainer(props) {
     const [idCategory, setIdCategory] = useState("");
@@ -16,7 +16,7 @@ export default function ItemDetailsContainer(props) {
         
         setIdItem(param.id)
     }, [param]);
-
+    console.log(idItem);
     return (
         <div className="contenedor-details">
             {
@@ -24,24 +24,31 @@ export default function ItemDetailsContainer(props) {
                 props.products.map((element) => {
                   
                     if (element.id === idCategory) {
+
                         return (
-                            element.items.map(items => (
+                            element.items.map(items => {
                                 
+                                if (items.idProduct == idItem) {
+                                    console.log(element.items.idProduct)
+                                    return (
                                         <div>
                                             <img src={items.img} className='imgs-card' />
-                                            <div className="informacion">
+                                            <div className="informacion-details">
                                                 <p>{items.nameProduct}</p>
-                                                <p className="precio">{items.price}<span>.99</span></p>
+                                                <p>{items.description}</p>
+                                                <p className="precio-details">{items.price}<span>.99</span></p>
                                                 <button>Comprar</button>
                                             </div>
                                         </div>
-                                    ))
-                            )
+                                    )
+                                } 
+                            })
+                        )
+                    } else {
+                        return null;
                     }
                 })
             }
         </div>
     )
-
-
 }

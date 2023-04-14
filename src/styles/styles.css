@@ -143,6 +143,59 @@ nav ul {
   margin: 1rem;
 }
 
+.contenedor > div:hover {
+  background-color: rgba(51, 130, 248, 0.5490196078);
+}
+
+.imgs-card {
+  width: 320px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+  align-items: center;
+}
+
+.informacion-details {
+  height: 150px;
+  width: 90vw;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.informacion-details > p:first-child {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.informacion-details .precio-details {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.informacion-details .precio-details span {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.informacion-details button {
+  background-color: #1f1f1f;
+  width: 100px;
+  color: white;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  font-size: 17px;
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;

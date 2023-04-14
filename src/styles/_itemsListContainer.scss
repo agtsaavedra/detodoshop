@@ -1,50 +1,80 @@
-.itemsList {
+.contenedor{
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 2rem;
-    flex-direction: row;
-    align-items: center;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 1%;
-    gap: 1rem;
-
-
-
+    gap: 50px;
+    margin-bottom: 20px;
 }
 
-.card-box {
+.contenedor>div{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: #afcdff;
+    border-radius: 20px;
+    margin: 1rem;
+}
+
+.contenedor>div:hover{
+    background-color: #3382f88c;
+}
+
+.imgs-card {
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.informacion{
+    height: 150px;
     display: flex;
-    background-color: black;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+}
+.informacion>p:first-child{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+.informacion .precio {
+    font-size: 20px;
+    font-weight: 500;
+}
+.informacion .precio span{
+    font-size: 17px;
+    font-weight: 300;
 }
 
-.title {
-    font-style: bold;
-    font-size: x-large;
-
+.informacion button{
+    background-color: #1f1f1f;
+    width: 100px;
+    color: #ffff;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
-
-
-.list-it {
-    list-style: none;
-}
-
-.cards {
-    padding: 1rem;
-    height: 250px;
-    width: 200px;
-    flex: 1 0 21%;
-}
-
-.title-itemlist {
+.informacion Link{
+    background-color: #1f1f1f;
+    width: 100px;
+    color: #ffff;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
     display: flex;
     justify-content: center;
 }
 
-.image-card {
-    height: 60%;
-    width: 100%;
-    
+.title-home {
+
+    display: flex;
+    justify-content: center;
 }

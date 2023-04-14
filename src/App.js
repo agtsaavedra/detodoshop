@@ -1,30 +1,34 @@
-import ItemsListContainer from './components/ItemsListContainer';
-import ItemDetailContainer from './components/ItemDetailContainer';
-import Home from './components/Home';
-import NavBar from './components/NavBar';
-import './styles/style.css'
+
+import './styles/styles.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import {data} from "./data"
+import { data } from "./services/data"
 import { useEffect, useState } from 'react';
+import NavBar from './components/NavBar';
+import HomePage from './components/HomePage';
+import ItemsListContainer from './components/ItemsListContainer';
+import ItemDetailsContainer from './components/ItemDetailsContainer';
+
+
 function App() {
+
   const [products, setProducts] = useState([]);
-  
+
   useEffect(() => {
     setProducts(data);
   }, [])
-  
+  console.log(products);
   return (
 
     <BrowserRouter>
-    <NavBar products={products}/>
-    <Routes>
-      <Route path='/' element={<Home products={products}/>}></Route>
-      <Route path='/:category' element={<ItemsListContainer products={products}/>}></Route>
-      <Route path='/:category/:id' element={<ItemDetailContainer products={products}/>}></Route>
-    </Routes>
+      <NavBar products={products} />
+      <Routes>
+        <Route path='/' element={<HomePage products={products} />}></Route>
+        <Route path='/:category' element={<ItemsListContainer products={products} />}></Route>
+        <Route path='/:item/:id' element={<ItemDetailsContainer products={products}/>}></Route>
+      </Routes>
     </BrowserRouter>
-    
-   
+
+
 
   );
 }

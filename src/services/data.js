@@ -1,5 +1,3 @@
-
-
 export const data = [
     {
         id: 1,
@@ -10,32 +8,32 @@ export const data = [
                 nameProduct: "Celular Samsung S20",
                 price: 250000,
                 quantity: 1,
-                img: '../public/images/samsung20.jpg',
+                img: 'images/samsung.jpg',
                 description:"16 GB de Ram, 4000mah y Exynos 8800"
             },
             {
                 idProduct: 2,
-                nameProduct: "Apple Watch",
+                nameProduct: "Notebook DELL",
                 price: 150000,
                 quantity: 1,
-                img: "../public/images/samsungs20.jpg",
-                description:"16 GB de Ram, 4000mah y Exynos 8800"
+                img: "images/dell.jpg",
+                description:"16 GB de Ram, Intel I5"
             },
             {
                 idProduct: 3,
-                nameProduct: "Chromecast",
+                nameProduct: "MotoWatch",
                 price: 20000,
                 quantity: 1,
-                img: "../public/images/samsungs20.jpg",
-                description:"16 GB de Ram, 4000mah y Exynos 8800"
+                img: "images/moto.jpg",
+                description:"3 GB de Ram, Procesador Snapdragon"
             },
             {
                 idProduct: 4,
                 nameProduct: "Mouse Logitech",
                 price: 8000,
                 quantity: 1,
-                img: "../public/images/samsungs20.jpg",
-                description:"16 GB de Ram, 4000mah y Exynos 8800"
+                img: "images/logitech.jpg",
+                description:"1800 DPI Max."
             }
         ]
 
@@ -49,32 +47,32 @@ export const data = [
                 nameProduct: "Zapatillas Nike",
                 price: 20000,
                 quantity: 1,
-                img: "../public/images/samsungs20.jpg",
-                description:"16 GB de Ram, 4000mah y Exynos 8800"
+                img: "images/nike.jpg",
+                description:"TALLES 35-48 --- Running"
             },
             {
                 idProduct: 2,
                 nameProduct: "Campera Adidas",
                 price: 35000,
                 quantity: 1,
-                img: "../public/images/samsungs20.jpg",
-                description:"16 GB de Ram, 4000mah y Exynos 8800"
+                img: "images/adidas.jpg",
+                description:"Maxima Calidad - TALLES S-XXL"
             },
             {
                 idProduct: 3,
                 nameProduct: "Cinturon Gucci",
                 price: 200000,
                 quantity: 1,
-                img: "../public/images/samsungs20.jpg",
-                description:"16 GB de Ram, 4000mah y Exynos 8800"
+                img: "images/gucci.jpg",
+                description:"100% CUERO"
             },
             {
                 idProduct: 4,
                 nameProduct: "Remera Balenciaga",
                 price: 80000,
                 quantity: 1,
-                img: "../public/images/samsungs20.jpg",
-                description:"16 GB de Ram, 4000mah y Exynos 8800"
+                img: "images/balenciaga.jpg",
+                description:"100% Algodon - TALLES S-XXL"
             }
         ]
 
@@ -88,15 +86,15 @@ export const data = [
                 nameProduct: "Las mil y una noches",
                 price: 2000,
                 quantity: 1,
-                img: "../public/images/samsungs20.jpg",
+                img: "images/lasmil.jpg",
                 description:"16 GB de Ram, 4000mah y Exynos 8800"
             },
             {
                 idProduct: 2,
-                nameProduct: "Don Quijote de la Mancha",
+                nameProduct: "Don Quijote",
                 price: 2800,
                 quantity: 1,
-                img: "../public/images/samsungs20.jpg",
+                img: "images/quijote.jpg",
                 description:"16 GB de Ram, 4000mah y Exynos 8800"
             },
             {
@@ -104,7 +102,7 @@ export const data = [
                 nameProduct: "Orgullo y prejuicio",
                 price: 3500,
                 quantity: 1,
-                img: "../public/images/samsungs20.jpg",
+                img: "images/orgullo.jpg",
                 description:"16 GB de Ram, 4000mah y Exynos 8800"
             },
             {
@@ -112,7 +110,7 @@ export const data = [
                 nameProduct: "Los tres mosqueteros",
                 price: 5000,
                 quantity: 1,
-                img: "../public/images/samsungs20.jpg",
+                img: "images/mosque.jpg",
                 description:"16 GB de Ram, 4000mah y Exynos 8800"
             }
         ]

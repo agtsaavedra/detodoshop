@@ -1,14 +1,10 @@
 @import './navBar';
-@import './itemsListContainer';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import './ItemsListContainer';
+@import './itemsDetailsContainer';
 
 *{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-
-}
-
-body {
-    background-color: gray;
 }

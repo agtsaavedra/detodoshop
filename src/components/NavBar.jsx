@@ -1,23 +1,23 @@
 import React, { useEffect, useState } from 'react'
-import Cart from './Cart'
-import { data } from '../data'
+import { data } from '../services/data'
 import { Link } from 'react-router-dom'
 export default function NavBar(props) {
-  console.log(props)
+  
 
   return (
 
     <nav className='navbar'>
       <ul className='title-nav'>
         <li>
-        <Link  style={{ textDecoration: 'none' , color: 'inherit'}}  to={"/"}>DeTodo SHOP</Link> 
+        <Link style={{ textDecoration: 'none' , color: 'inherit'}}  to={"/"}>DeTodo SHOP</Link> 
         </li>
         {props.products.map((element) => {
           return (<Link className='buttons'
           to={"/"+element.category}>{element.category}</Link>);
         })}
         <li>
-          <Cart className="icon-nav" />
+          
+          
         </li>
       </ul>
     </nav>

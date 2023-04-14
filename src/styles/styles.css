@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+nav li {
+  display: inline;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 30px;
+}
+
+.title-nav {
+  font-size: x-large;
+}
+
+.icon-nav:hover {
+  color: #530000;
+}
+
+.buttons {
+  background-color: #1f1f1f;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.buttons:hover {
+  background-color: #1b1b1b;
+  color: white;
+}
+
+.buttons {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.contenedor > div {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: #afcdff;
+  border-radius: 20px;
+  margin: 1rem;
+}
+
+.contenedor > div:hover {
+  background-color: rgba(51, 130, 248, 0.5490196078);
+}
+
+.imgs-card {
+  width: 320px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.informacion {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.informacion > p:first-child {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.informacion .precio {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.informacion .precio span {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.informacion button {
+  background-color: #1f1f1f;
+  width: 100px;
+  color: white;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  font-size: 17px;
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.informacion Link {
+  background-color: #1f1f1f;
+  width: 100px;
+  color: white;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  font-size: 17px;
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.title-home {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.contenedor-details > div {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: #afcdff;
+  border-radius: 20px;
+  margin: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*# sourceMappingURL=styles.css.map */

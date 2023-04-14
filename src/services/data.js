@@ -8,7 +8,7 @@ export const data = [
                 nameProduct: "Celular Samsung S20",
                 price: 250000,
                 quantity: 1,
-                img: 'images/samsung.jpg',
+                img: 'e-commerce-reactjs/images/samsung.jpg',
                 description:"16 GB de Ram, 4000mah y Exynos 8800"
             },
             {

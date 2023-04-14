@@ -63,9 +63,7 @@ nav ul {
   background-color: rgba(51, 130, 248, 0.5490196078);
 }
 
-.imgs-card {
-  width: 320px;
-  height: 340px;
+.imgs-card-details {
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }

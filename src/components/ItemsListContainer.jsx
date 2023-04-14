@@ -23,23 +23,24 @@ export default function ItemsListContainer(props) {
 
                 props.products.map((element) => {
                     if (element.id === idCategory) {
-                        
+
                         return (
                             <>
-                                
+
                                 {
-                                    
-                                element.items.map(items => (    
-                                  <div>
-                                        <img src={items.img} className='imgs-card' />
-                                        <div className="informacion">
-                                            <p>{items.nameProduct}</p>
-                                            <p className="precio">{items.price}<span>.99</span></p>
-                                            <button>Comprar</button>
-                                            <button><Link style={{ textDecoration: 'none', color: 'inherit' }} to={"/" + element.category + "/" + items.idProduct}>Ver Mas</Link></button>
+
+                                    element.items.map(items => (
+
+                                        <div>
+                                            <img src={items.img} className='imgs-card' />
+                                            <div className="informacion">
+                                                <p>{items.nameProduct}</p>
+                                                <p className="precio">{items.price}<span>.99</span></p>
+                                                <button>Comprar</button>
+                                                <button><Link style={{ textDecoration: 'none', color: 'inherit' }} to={"/" + element.category + "/" + items.idProduct} image={items.img}>Ver Mas</Link></button>
+                                            </div>
                                         </div>
-                                    </div>
-                                ))}
+                                    ))}
                             </>)
                     }
                 })

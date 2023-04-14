@@ -29,10 +29,10 @@ export default function ItemDetailsContainer(props) {
                             element.items.map(items => {
                                 
                                 if (items.idProduct == idItem) {
-                                    console.log(element.items.idProduct)
+                                    console.log(items.img)
                                     return (
                                         <div>
-                                            <img src={items.img} className='imgs-card' />
+                                            <img src={items.img} className='imgs-card-details'/>
                                             <div className="informacion-details">
                                                 <p>{items.nameProduct}</p>
                                                 <p>{items.description}</p>

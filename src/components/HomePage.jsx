@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 export default function HomePage(props) {
     return (
     <>
@@ -18,7 +18,7 @@ export default function HomePage(props) {
                                         <p>{items.nameProduct}</p>
                                         <p className="precio">{items.price}<span>.99</span></p>
                                         <button>Comprar</button>
-                                        <button>Ver Mas</button>
+                                        <button><Link style={{ textDecoration: 'none', color: 'inherit' }} to={"/" + element.category + "/" + items.idProduct}>Ver Mas</Link></button>
                                     </div>
                                 </div>
                             ))}

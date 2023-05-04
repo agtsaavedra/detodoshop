@@ -3,7 +3,7 @@ import { getDocs, collection, query, where, doc, getDoc,addDoc ,documentId, orde
 import db from "./firebase/firebaseConfig";
 
 
-export const fetchProductsss = async () => {
+export const fetchProducts = async () => {
     try {
         const docRef = doc(db, 'products');
         const response = await getDoc(docRef);
@@ -14,18 +14,7 @@ export const fetchProductsss = async () => {
         console.error(error);
     }
 };
+//fetch principal, se llama en itemslistdetails (no muestra nada da error base de datos)
+// 
 
-export const fetchProducts = async () => {
-    try {
-      const querySnapshot = await getDocs(collection(db, "products"));
-      const productsData = [];
-      querySnapshot.forEach((doc) => {
-        const productAdapted = adaptProductsData(doc);
-        productsData.push(productAdapted);
-      });
-      return productsData;
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
+ 

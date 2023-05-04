@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { data } from '../services/data'
+import { data } from '../data/services/data';
 import { Link } from 'react-router-dom'
 import Cart from './Cart';
 export default function NavBar(props) {

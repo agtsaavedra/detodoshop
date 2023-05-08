@@ -1,21 +1,27 @@
 
 import './styles/styles.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { data } from './data/services/data'; 
 import { useEffect, useState } from 'react';
 import NavBar from './components/NavBar';
 import ItemsListContainer from './components/ItemsListContainer';
 import ItemDetailsContainer from './components/ItemDetailsContainer';
-
+import { getProductos } from './data/getData';
+import { data } from './data/services/data';
 
 function App() {
 
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    setProducts(data);
+    const getProductsFirestore = getProductos();
+
+    getProductsFirestore.then((getProductsFirestore => {
+      setProducts(getProductsFirestore);
+    }))
+    
+    
   }, [])
-  console.log(products);
+ console.log("productos del appjs",products);
   return (
 
     <BrowserRouter>

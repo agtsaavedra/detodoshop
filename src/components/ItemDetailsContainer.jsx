@@ -33,11 +33,11 @@ export default function ItemDetailsContainer(props) {
 
                                     return (
                                         <div>
-                                            <img src={items.img} className='imgs-card-details' />
+                                            <img src={items.img} className='imgs-card imgs-card-details'  />
                                             <div className="informacion-details">
                                                 <p>{items.nameProduct}</p>
                                                 <p>{items.description}</p>
-                                                <p className="precio-details">{items.price}</p>
+                                                <p className="precio-details">${items.price}</p>
                                                 <button>Comprar</button>
                                             </div>
                                         </div>

@@ -18,7 +18,6 @@ export default function NavBar(props) {
         })}
         <li>
           <Cart></Cart>
-          
         </li>
       </ul>
     </nav>

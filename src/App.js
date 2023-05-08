@@ -7,7 +7,7 @@ import ItemsListContainer from './components/ItemsListContainer';
 import ItemDetailsContainer from './components/ItemDetailsContainer';
 import { getProductos } from './data/getData';
 import { data } from './data/services/data';
-
+import { CartContext } from './context/CartContext';
 function App() {
 
   const [products, setProducts] = useState([]);
@@ -21,16 +21,18 @@ function App() {
     
     
   }, [])
- console.log("productos del appjs",products);
+
   return (
 
     <BrowserRouter>
+      <CartContext.Provider>
       <NavBar products={products} />
       <Routes>
         <Route path='/' element={<ItemsListContainer products={products} />}></Route>
-        <Route path=':category' element={<ItemsListContainer products={products} />}></Route>
+        <Route path='/:category' element={<ItemsListContainer products={products} />}></Route>
         <Route path='/:item/:id' element={<ItemDetailsContainer products={products}/>}></Route>
       </Routes>
+      </CartContext.Provider>
     </BrowserRouter>
 
 

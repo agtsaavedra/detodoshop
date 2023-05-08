@@ -1,50 +1,58 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom';
+import { getProductos } from '../data/getData';
+import Item from './Item';
 
 export default function ItemsListContainer(props) {
     const [idCategory, setIdCategory] = useState("");
     const param = useParams();
-    useEffect(() => {
-        if (props.products) {
-            props.products.forEach((element) => {
-                if (element.category === param.category) {
-                    setIdCategory(element.id);
-                }
-            });
-        }
 
+    const [products, setProducts] = useState();
+
+
+    useEffect(() => {
+
+        if (param.category) {
+            const getProductsFirestore = getProductos(param.category);
+
+            getProductsFirestore.then((getProductsFirestore => {
+                setProducts(getProductsFirestore);
+            }))
+        }
+        else {
+
+            const getProductsFirestoreByCategory = getProductos();
+
+            getProductsFirestoreByCategory.then((getProductsFirestore => {
+                setProducts(getProductsFirestore);
+            }))
+        }
 
     }, [param]);
 
 
+    console.log(products);
+
     return (
+
         <div className="contenedor">
             {
+               products && products.map((element) => {
+                    return (
+                        <>
+                            {
+                                element.items.map(items => (           
+                                    <Item items={items} category={element.category}>
+                                    </Item>
+                                
+                                ))
+                            }
+                        </>
+                        )
 
-                props.products.map((element) => {
-                    if (element.id === idCategory || param.category === undefined ) {
-
-                        return (
-                            <>
-
-                                {
-
-                                    element.items.map(items => (
-                                        
-                                        <div>
-                                            <img src={items.img} className='imgs-card' alt='Imagen del producto'/>
-                                            <div className="informacion">
-                                                <p>{items.nameProduct}</p>
-                                                <p className="precio">${items.price}</p>
-                                                <button>Comprar</button>
-                                                <button><Link style={{ textDecoration: 'none', color: 'inherit' }} to={"/" + element.category + "/" + items.idProduct} image={items.img}>Ver Mas</Link></button>
-                                            </div>
-                                        </div>
-                                    ))}
-                            </>)
-                    }
                 })
             }
         </div>
+
     )
 }

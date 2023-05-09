@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { getProductos } from '../data/getData';
 import Item from './Item';
 
 export default function ItemsListContainer(props) {
-    const [idCategory, setIdCategory] = useState("");
+    
     const param = useParams();
 
     const [products, setProducts] = useState();
@@ -31,25 +31,23 @@ export default function ItemsListContainer(props) {
     }, [param]);
 
 
-    console.log(products);
+   
 
     return (
 
         <div className="contenedor">
             {
-               products && products.map((element) => {
+                products && products.map((element) => {
                     return (
                         <>
                             {
-                                element.items.map(items => (           
+                                element.items.map(items => (
                                     <Item items={items} category={element.category}>
                                     </Item>
-                                
                                 ))
                             }
                         </>
-                        )
-
+                    )
                 })
             }
         </div>

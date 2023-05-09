@@ -6,8 +6,8 @@ import NavBar from './components/NavBar';
 import ItemsListContainer from './components/ItemsListContainer';
 import ItemDetailsContainer from './components/ItemDetailsContainer';
 import { getProductos } from './data/getData';
-import { data } from './data/services/data';
-import { CartContext } from './context/CartContext';
+import { CartContext, ShoppingCartProvider } from './context/CartContext';
+
 function App() {
 
   const [products, setProducts] = useState([]);
@@ -22,17 +22,18 @@ function App() {
     
   }, [])
 
+  const [cart, setCart] = useState([]);
   return (
 
     <BrowserRouter>
-      <CartContext.Provider>
+      <ShoppingCartProvider value={[cart, setCart]}>
       <NavBar products={products} />
       <Routes>
-        <Route path='/' element={<ItemsListContainer products={products} />}></Route>
-        <Route path='/:category' element={<ItemsListContainer products={products} />}></Route>
+        <Route path='/' element={<ItemsListContainer/>}></Route>
+        <Route path='/:category' element={<ItemsListContainer/>}></Route>
         <Route path='/:item/:id' element={<ItemDetailsContainer products={products}/>}></Route>
       </Routes>
-      </CartContext.Provider>
+      </ShoppingCartProvider>
     </BrowserRouter>
 
 

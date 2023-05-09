@@ -1,4 +1,4 @@
-import { getDocs, collection, getDoc, query, where } from "firebase/firestore";
+import { getDocs, collection, query, where, limit } from "firebase/firestore";
 import db from "./services/firebase/firebaseConfig";
 import { createProductsAdapted } from "./adapters/productAdapter";
 
@@ -15,3 +15,7 @@ export const getProductos = async (category) => {
   
     return productsAdapted;
   };
+
+ 
+
+ 

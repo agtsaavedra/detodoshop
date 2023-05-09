@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import ItemDetail from "./ItemDetail";
 
 export default function ItemDetailsContainer(props) {
     const [idCategory, setIdCategory] = useState("");
     const [idItem, setIdItem] = useState("");
-    const [loading, setLoading] = useState (false);
+    const [selectedItem, setSelectedItem] = useState();
     
     const param = useParams();
     useEffect(() => {
@@ -18,29 +19,27 @@ export default function ItemDetailsContainer(props) {
 
         setIdItem(param.id)
     }, [param]);
-    console.log(idItem);
+    
+    let selectedItemTemp;
+    
+    useEffect(() => {
+        if (selectedItemTemp) {
+          setSelectedItem(selectedItemTemp);
+        }
+      }, [selectedItemTemp]);
+
     return (
         <div className="contenedor-details">
-            {
+            {   
                 props.products.map((element) => {
-
                     if (element.id === idCategory) {
-
                         return (
                             element.items.map(items => {
-
                                 if (items.idProduct == idItem) {
-
+                                    selectedItemTemp = (items);
+                                    console.log(selectedItemTemp);
                                     return (
-                                        <div>
-                                            <img src={items.img} className='imgs-card imgs-card-details'  />
-                                            <div className="informacion-details">
-                                                <p>{items.nameProduct}</p>
-                                                <p>{items.description}</p>
-                                                <p className="precio-details">${items.price}</p>
-                                                <button>Comprar</button>
-                                            </div>
-                                        </div>
+                                       <ItemDetail items={items}/>
                                     )
                                 }
                             })
@@ -52,4 +51,5 @@ export default function ItemDetailsContainer(props) {
             }
         </div>
     )
+
 }

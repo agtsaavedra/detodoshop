@@ -6,7 +6,7 @@ export default function CheckoutDetail(props) {
     <div>
       <span className='cantidad-producto-carrito'>{props.product.quantity}</span>
       <p className='titulo-producto-carrito'>{props.product.nameProduct}</p>
-      <span className='precio-producto-carrito'>${props.product.price}</span>
+      <span className='precio-producto-carrito'>${props.product.price}</span>    
     </div>
   </div>
   )

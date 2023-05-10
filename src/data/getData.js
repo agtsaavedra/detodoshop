@@ -1,4 +1,4 @@
-import { getDocs, collection, query, where, limit, addDoc } from "firebase/firestore";
+import { getDocs, collection, query, where, addDoc } from "firebase/firestore";
 import db from "./services/firebase/firebaseConfig";
 import { createProductsAdapted } from "./adapters/productAdapter";
 

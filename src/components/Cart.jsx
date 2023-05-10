@@ -18,10 +18,10 @@ export default function Cart() {
 
   return (
     <>
-      <Badge badgeContent={cart.length}>
+      <Badge badgeContent={cart.length} className='icon-cart'>
         <ShoppingCartIcon onClick={handleCartIconClick} />
       </Badge>
-      <div className='cart-container'>
+      <div className='cart-container fade-in'>
         {isCartOpen && // Solo renderizar si el carrito está abierto
 
           cart.map(function (product) {

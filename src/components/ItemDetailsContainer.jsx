@@ -32,7 +32,11 @@ export default function ItemDetailsContainer(props) {
         }
       }, [selectedItemTemp]);
 
-
+      if(!props.products){
+        return (
+            <div>Cargando</div>
+        )
+      }
       
 
     return (

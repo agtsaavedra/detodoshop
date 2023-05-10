@@ -30,7 +30,11 @@ export default function ItemsListContainer(props) {
 
     }, [param]);
 
-
+    if(!products){
+        return (
+            <div>Cargando</div>
+        )
+      }
    
 
     return (

@@ -2,7 +2,7 @@
   "name": "e-commerce-reactjs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://agustinsaavedra9.github.io/e-commerce-reactjs",
+  "homepage": "https://agustinsaavedra9.github.io/",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
@@ -19,6 +19,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
+    "react-toastify": "^9.1.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

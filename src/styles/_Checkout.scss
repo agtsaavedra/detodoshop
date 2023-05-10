@@ -1,0 +1,90 @@
+.container-checkout {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 10vw;
+  }
+.checkout-form {
+    display: flex;
+    flex-direction: column;  
+    margin: 2px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .mensaje-valido {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .mensaje-invalido {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .detail-container {
+    display: flex;
+    flex-direction: column;   
+    margin-left: 0;
+  }
+  
+  .detail-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .detail-item span {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .button-end {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button-end:hover {
+    background-color: #3e8e41;
+  }
+
+
+  

@@ -5,8 +5,10 @@ import { useEffect, useState } from 'react';
 import NavBar from './components/NavBar';
 import ItemsListContainer from './components/ItemsListContainer';
 import ItemDetailsContainer from './components/ItemDetailsContainer';
+import Checkout from './components/Checkout';
 import { getProductos } from './data/getData';
 import { CartContext, ShoppingCartProvider } from './context/CartContext';
+
 
 function App() {
 
@@ -32,6 +34,7 @@ function App() {
         <Route path='/' element={<ItemsListContainer/>}></Route>
         <Route path='/:category' element={<ItemsListContainer/>}></Route>
         <Route path='/:item/:id' element={<ItemDetailsContainer products={products}/>}></Route>
+        <Route path='/checkout' element={<Checkout/>}></Route>
       </Routes>
       </ShoppingCartProvider>
     </BrowserRouter>

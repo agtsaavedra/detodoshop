@@ -7,6 +7,9 @@ export default function ItemDetailsContainer(props) {
     const [idItem, setIdItem] = useState("");
     const [selectedItem, setSelectedItem] = useState();
     
+
+
+
     const param = useParams();
     useEffect(() => {
         if (props.products) {
@@ -21,12 +24,16 @@ export default function ItemDetailsContainer(props) {
     }, [param]);
     
     let selectedItemTemp;
+
     
     useEffect(() => {
         if (selectedItemTemp) {
           setSelectedItem(selectedItemTemp);
         }
       }, [selectedItemTemp]);
+
+
+      
 
     return (
         <div className="contenedor-details">

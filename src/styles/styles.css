@@ -146,16 +146,21 @@ nav ul {
 }
 
 .imgs-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 320px;
   height: 340px;
-  object-fit: cover;
   border-radius: 20px 20px 0px 0px;
-  align-items: center;
+}
+
+.imgs-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .informacion-details {
-  height: 150px;
-  width: 90vw;
   padding: 2%;
   display: flex;
   justify-content: center;
@@ -192,6 +197,148 @@ nav ul {
   cursor: pointer;
   display: flex;
   justify-content: center;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 8%;
+  position: absolute;
+  right: 3%;
+  width: 250px;
+}
+
+.cart-product {
+  background-color: #000000;
+  padding: 16px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.info-cart-product {
+  display: flex;
+  align-items: center;
+}
+
+.cantidad-producto-carrito {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 16px;
+}
+
+.titulo-producto-carrito {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 16px;
+}
+
+.precio-producto-carrito {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cart-container button {
+  background-color: #1f1f1f;
+  width: 250px;
+  color: white;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  font-size: 17px;
+  font-weight: 300;
+  cursor: pointer;
+  justify-content: center;
+  display: block;
+}
+
+.container-checkout {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 10vw;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type=text],
+input[type=email] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type=submit] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: #3e8e41;
+}
+
+.mensaje-valido {
+  color: green;
+  font-weight: bold;
+}
+
+.mensaje-invalido {
+  color: red;
+  font-weight: bold;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.detail-item span {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.button-end {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-end:hover {
+  background-color: #3e8e41;
 }
 
 * {

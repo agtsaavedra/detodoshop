@@ -7,15 +7,13 @@ export default function Item(props) {
     const [cart, setCart] = useContext(CartContext);
 
     const addToCart = (product) => {
-        
-        const existingProduct = cart.find(p => p.idProduct === product.idProduct);
+      const existingProduct = cart.find(p => p.idProduct === product.idProduct);
         if (existingProduct) {
-          setCart(cart.map(p => p.id === product.id ? { ...p, quantity: p.quantity + 1 } : p));
-          console.log(cart)
+          setCart(cart.map(p => p.idProduct === product.idProduct ? { ...p, quantity: p.quantity + 1 } : p));
         } else {
-          setCart([...cart, { ...product, quantity: 1 }]);
-          console.log(cart)
-        }
+          setCart([...cart, { ...product, quantity: 1 }]);  
+          console.log(cart);
+        }  
       }
 
     

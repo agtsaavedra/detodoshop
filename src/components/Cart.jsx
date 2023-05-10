@@ -12,6 +12,10 @@ export default function Cart() {
     setIsCartOpen(!isCartOpen);
   }
 
+  const clearCart = () => {
+    setCart([]);
+  }
+
   return (
     <>
       <Badge badgeContent={cart.length}>
@@ -35,6 +39,7 @@ export default function Cart() {
                     ${product.price}
                   </span>
                 </div>
+
               </div>
 
             )
@@ -43,10 +48,14 @@ export default function Cart() {
           )
 
         }
+        
         {isCartOpen && (
+          <>
           <Link to="/checkout">
             <button onClick={handleCartIconClick}>Ir al checkout</button>
           </Link>
+          <button onClick={() => clearCart()}>Vaciar Carrito</button>
+          </>
         )}
 
       </div>

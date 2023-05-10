@@ -3,6 +3,7 @@ import { CartContext } from '../context/CartContext';
 import CheckoutDetail from './CheckoutDetail';
 import { uploadOrder } from '../data/getData';
 import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export default function Checkout() {
     const [correosValidos, setCorreosValidos] = useState(false);
     const nombreRef = useRef(null);
@@ -33,16 +34,24 @@ export default function Checkout() {
 
         return total;
     };
+    
+    const clearCart = () => {
+        setCart([]);
+    }
 
     const handleFinalizarCompra = () => {
         uploadOrder(cart, calculateTotal()).then((orderNumber) => {
             toast.success(`Tu orden ${orderNumber} ha sido procesada!`);
+            clearCart();
         });
+
     }
 
 
     return (
         <>
+        <h1 style={{ textAlign: 'center' }}>Detalle de compra</h1>
+        <ToastContainer autoClose={3000} />
         <div className='container-checkout'>
             <form className="checkout-form" onSubmit={handleSubmit}>
                 <div className="form-group">
@@ -65,7 +74,7 @@ export default function Checkout() {
                     <label htmlFor="telefono">Teléfono:</label>
                     <input type="text" id="telefono" ref={telefonoRef} />
                 </div>
-                <button type="submit">Enviar</button>
+                <button type="submit">Habilitar Compra</button>
                 {correosValidos ? (
                     <p className="mensaje-valido">Los correos electrónicos son válidos.</p>
                 ) : (
@@ -89,7 +98,7 @@ export default function Checkout() {
                 
             </div>
         </div>
-        <ToastContainer autoClose={3000} />
+        
         </>
     );
 

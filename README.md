@@ -1,9 +1,15 @@
-# Getting Started with Create React App
+# Proyecto Final de Coderhouse
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es con fines del proyecto final del curso de Programacion Front-End, donde se trabaja con FireStore y ReactJS.
+Consulta una base de datos compuesta por dos Colecciones (Productos y Ordenes)
+
+
+## Funcionamiento
+Permite la carga a un carrito de compras, el cual tambien permite vaciar el mismo en cualquier momento del flujo de la aplicacion.
+Luego consulta en un formulario que los correos electronicos ingresados sean correctos y permite la aparicion del boton Finalizar Compra, con su respectivo detalles.
+Finalmente el carrito se vacia y genera una orden de compra con un ID generado automaticamente en FireStore y lo muestra mediante un Toast.
 
 ## Available Scripts
-
 In the project directory, you can run:
 
 ### `npm start`

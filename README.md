@@ -1,6 +1,6 @@
 # DeTodoShop - ©
 
-Este proyecto es con fines del proyecto final del curso de Programacion Front-End, donde se trabaja con FireStore y ReactJS.
+Este proyecto es un sitio web de E-Commerce con fines de proyecto final del curso de Programacion Front-End, donde se trabaja con FireStore y ReactJS.
 Consulta una base de datos compuesta por dos Colecciones (Productos y Ordenes)
 
 
